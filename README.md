@@ -105,3 +105,19 @@ If your solution will be similar to the solutions of other students or AI bots, 
 - you may be asked questions about your solution
 - there may be requests to make changes to your solution
 - there may be requests to solve small practical tasks
+
+## How to submit your solution to moodle
+
+### HR/HRO
+- Complete task https://github.com/School-of-Digital-Competencies/js-ts-tasks/tree/test-01-js-game-countries-and-capitals
+
+- Upload your solution to https://jsfiddle.net/:
+  - Open https://jsfiddle.net/ ![image](https://github.com/user-attachments/assets/a37e35f0-f015-4dff-96a7-ba380f643595)
+
+  - Paste your solution into JavaScript section ![image](https://github.com/user-attachments/assets/53a2c7a0-2f8a-404f-9c37-3bde3af20598)
+
+  - In the top right corner click on cloud with arrow icon (next to run button) ![image](https://github.com/user-attachments/assets/70fcbae1-216f-4971-b02e-d64f7ff31d11)
+
+  - Copy url from browser (example url "https://jsfiddle.net/mgsdgds3") ![image](https://github.com/user-attachments/assets/0a04aee9-deb5-4d50-a1dd-8c193c4dacf2)
+
+  - Submit only that url into moodle assigment 
