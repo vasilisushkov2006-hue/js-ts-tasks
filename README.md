@@ -6,28 +6,29 @@ Write a program that implements the "Guess the Country by its Capital" game in a
 
 ## Working demo of the game
 
-<details><summary>Game start, first guess</summary>
-![demo 01](./demo/01.png)
+<details>
+  <summary>Game start, first guess</summary>
+  <img src="./demo/01.png">
 </details>
 <details><summary>First guess wrong, second guess</summary>
-![demo 02](./demo/02.png)
-![demo 03](./demo/03.png)
+ <img src="./demo/02.png">
+ <img src="./demo/03.png">
 </details>
 <details><summary>Second guess wrong, third guess</summary>
-![demo 04](./demo/04.png)
-![demo 04](./demo/05.png)
+<img src="./demo/04.png">
+ <img src="./demo/05.png">
 </details>
 <details><summary>Third guess wrong, game over, possility to start again or no</summary>
-![demo 06](./demo/06.png)
+<img src="./demo/06.png">
 </details>
 <details><summary>Game restart, first guess</summary>
-![demo 07](./demo/07.png)
+<img src="./demo/07.png">
 </details>
 <details><summary>First guess wrong, second guess</summary>
-![demo 08](./demo/08.png)
+<img src="./demo/08.png">
 </details>
 <details><summary>Second guess correct, game winner, possiblity to restart</summary>
-![demo 09](./demo/09.png)
+<img src="./demo/09.png">
 </details>
 
 ## Requirements
