@@ -120,4 +120,8 @@ If your solution will be similar to the solutions of other students or AI bots, 
 
   - Copy url from browser (example url "https://jsfiddle.net/mgsdgds3") ![image](https://github.com/user-attachments/assets/0a04aee9-deb5-4d50-a1dd-8c193c4dacf2)
 
-  - Submit only that url into moodle assigment 
+  - **Open that url in the new browser tab (incognito mode) to check that all is fine and you see your solution**
+
+  - Submit only that url into moodle assigment
+    
+  - P.S. If jsfiddle is not working for you, you could publish your solution on any platfrom you know which supports file sharing by link (and doesn't require auth)
