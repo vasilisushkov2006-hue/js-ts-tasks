@@ -130,7 +130,7 @@ If your solution will be similar to the solutions of other students or AI bots, 
 
 ## How to submit your solution to moodle
 
-- Complete task https://github.com/School-of-Digital-Competencies/js-ts-tasks/tree/test-01-js-game-countries-and-capitals
+- Complete task https://github.com/School-of-Digital-Competencies/js-ts-tasks/tree/test-02-html-css
 
 - Share link to your solution from https://jsfiddle.net/:
 
