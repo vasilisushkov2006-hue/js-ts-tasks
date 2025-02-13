@@ -1,100 +1,73 @@
-# Test 01: JavaScript Game Countries and Capitals
+# Test 01: JavaScript another try
 
-## Task description
+Develop solution to the one of the two tasks below
 
-Write a program that implements the "Guess the Country by its Capital" game in a browser. In this game, the player is given a capital of a randomly selected country, and he/she has to guess the name of that country. The player has 3 attempts to enter his guess in the browser prompt. After each wrongly guess the player is getting a hint as string in the browser console. The first hint is about the region of the country, the second is about population and the last one is about borders (short list of coutries given country has the same borders with). Each hint with a certain penalty (time in mc). If the player guesses the country correctly, they are told they have won, and the time they spent guessing, including penalties for hints, is displayed (in mc). If the player does not guess the country correctly, they are given the correct answer and asked if they want to play again. The game continues until the player decides to stop.
+## Task description - maximum 8 points of 10
 
-## Working demo of the game
+Develop a simple script to fetch user data from an external API, process it, and display relevant information. Your task is to write JavaScript functions that retrieves a list of users, filters them based on specific criteria, and formats the output.
 
-<details><summary>Game start, first guess</summary>
-![demo 01](./demo/01.png)
-</details>
-<details><summary>First guess wrong, second guess</summary>
-![demo 02](./demo/02.png)
-![demo 03](./demo/03.png)
-</details>
-<details><summary>Second guess wrong, third guess</summary>
-![demo 04](./demo/04.png)
-![demo 04](./demo/05.png)
-</details>
-<details><summary>Third guess wrong, game over, possility to start again or no</summary>
-![demo 06](./demo/06.png)
-</details>
-<details><summary>Game restart, first guess</summary>
-![demo 07](./demo/07.png)
-</details>
-<details><summary>First guess wrong, second guess</summary>
-![demo 08](./demo/08.png)
-</details>
-<details><summary>Second guess correct, game winner, possiblity to restart</summary>
-![demo 09](./demo/09.png)
-</details>
+### Requirements
 
-## Requirements
+1. Fetch Data (Async/Await & Promises)
+
+   - Use fetch and async/await to retrieve user data from this API:
+     👉 https://jsonplaceholder.typicode.com/users
+
+2. Process the Data
+
+- Extract only users who are based in cities that start with the letter "S".
+- Format the output to include:
+  - Name
+  - Email
+  - City
+- If no users match the criteria, display a message: "No users found in cities starting with 'S'."
+
+3. Display the Results (Console Output)
+
+- Log the filtered user list to the console in a readable format.
+
+```bash
+Filtered Users:
+1. Name: Samantha Doe, Email: samantha@example.com, City: Seattle
+2. Name: Steve Smith, Email: steve@example.com, City: San Francisco
+```
+
+### You will be asked to modify your solutions in order to meet new requirements. The results will have influence on the final points for the task
+
+## Task description - maximum 10 points of 10
+
+Your goal is to create a UserManager class that fetches user data from an API, filters it, processes it, and displays the results.
+
+### Requirements
+
+1. Create a UserManager class
+
+- This class should fetch user data from https://jsonplaceholder.typicode.com/users using async/await.
+
+2. Implement Filtering & Processing Methods
+
+- A method `filterUsersByCity(letter)` that returns users whose city starts with a given letter.
+- A method `getUserEmails()` that returns an array of emails.
+- A method `getTotalUsernameCharacters()` that returns the total number of characters across all usernames.
+
+3. Display Results in the Console
+
+- Print the filtered users in a readable format.
+- If no users match, display: "No users found."
+
+```bash
+Filtered Users:
+1. Name: Samantha Doe, Email: samantha@example.com, City: Seattle
+2. Name: Steve Smith, Email: steve@example.com, City: San Francisco
+```
+
+### You will be asked to modify your solutions in order to meet new requirements. The results will have influence on the final points for the task
+
+## General Requirements
 
 - Programming language: JavaScript
 - Working environment: Browser
 - Run your code in Browser Snippets: Chrome Dev Tools -> Sources tab -> Snippets sub tab on the left -> + New snippet button
-  - **ATTENTION for those who will use https://restcountries.com/v3.1/all API: you must open a website https://restcountries.com/ in a new browser tab and open Chrome Dev Tools while you are on this website tab**
-
-## Scoring - total maximum is 10, possible is 0-10.
-
-Each completed task costs specified amount of points.
-
-**If your solution doesn't work in Snippets (Syntax Errors in console, Runtime Errors in console, etc), you will be given total 0 points for the whole test. During the testing of your code, there won't be test cases when the player enters something in prompt that might broke your code. All test cases will contain strings with spaces (emulation of correct user behaviour)**
-
-### List of countries - choose one to implement
-
-#### Create your own list of countries and capitals - 1 point
-
-You could create an array of countries with capitals and other info and use it in your game. Pay attention to the country properties that must be defined for each country: name of the country, name of the capital, number of population, array of strings of names of neighboor countries (common borders)
-
-#### Load list of countries from the https://restcountries.com/v3.1/all - 2 points
-
-You could load an array of countries with capitals and other info and use it in your game. To do so, use browser fetch function and url `https://restcountries.com/v3.1/all`.
-
-You are free to choose Promise handing using then/catch or try, catch async/await
-
-### Select a country from the list for the new game - choose one to implement
-
-#### Select countries one by one from the list - 1 points
-
-#### Select random country from the list - 1.5 points
-
-### Game process - choose one to implement
-
-#### Level 1 game process (one guess for the player) - 3.5 points
-
-- Select a country, output its capital for the player
-- Handle his guess
-- If the guess of a country is correct, the games ends and the player is winner
-- Otherwise the game ends and the player is loser
-- At the end of the game you must ask the player if he/she wants to play one more game. He must type 'yes' in the prompt and the game must be restarted with the new country and capital. He must type 'no' in the prompt and the game ends completly.
-
-#### Level 2 game process (3 guesses for the player) - 4.5 points
-
-- Select a country, output its capital for the player
-- Player has maximum 3 guesses.
-- If the guess of a country is correct, the games ends and the player is winner
-- Otherwise if there are some amount of guesses left, the game continues and the player can enter one more guess. Otherwise the game ends and the player is loser
-- At the end of the game you must ask the player if he/she wants to play one more game. He must type 'yes' in the prompt and the game must be restarted with the new country and capital. He must type 'no' in the prompt and the game ends completly.
-
-#### Level 3 game process (3 guesses and hints after wrong guesses) - 5.5 points
-
-- Select a country, output its capital for the player
-- Player has maximum 3 guesses.
-- If the guess of a country is correct, the games ends and the player is winner
-- Otherwise if there are some amount of guesses left, the game continues. Output the hint for the player. The first hint must be the value of region of the country. The second hint must be about population of the country. And the last hint must contain the list of countries name which have the common borders with the given country. The player can enter one more guess. Otherwise the game ends and the player is loser
-- At the end of the game you must ask the player if he/she wants to play one more game. He must type 'yes' in the prompt and the game must be restarted with the new country and capital. He must type 'no' in the prompt and the game ends completly.
-
-#### Level 4 game process (3 guesses, hints with penalties in mc after wrong guesses and calculate time in mc the player spent to win the game) - 6.5 points
-
-- Select a country, output its capital for the player
-- Start calculating time (hint: in javascript there is a function performance.now())
-- Player has maximum 3 guesses.
-- If the guess of a country is correct, the games ends and the player is winner. Output the correct answer and the time in mc
-- Otherwise if there are some amount of guesses left, the game continues. Output the hint for the player and add penalty time in mc to his final time. The first hint must be the value of region of the country. The second hint must be about population of the country. And the last hint must contain the list of countries name which have the common borders with the given country. The player can enter one more guess. Otherwise the game ends and the player is loser
-- At the end of the game you must ask the player if he/she wants to play one more game. He must type 'yes' in the prompt and the game must be restarted with the new country and capital. He must type 'no' in the prompt and the game ends completly.
 
 ## Possible cheating attention
 
