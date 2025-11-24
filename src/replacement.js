@@ -7,6 +7,11 @@
  * @param {Array<number>} arr
  * @returns {Array<number>}
  */
-module.exports.replacement = function replacement(arr) {
-  throw new Error('Not implemented'); // remove me and write a solution
-};
+module.exports.replacement = 
+
+function replacement(arr) {
+  return arr.map(num => {
+    const digits = Math.abs(num).toString().length;
+    return Math.min(digits, 4);
+  });
+}

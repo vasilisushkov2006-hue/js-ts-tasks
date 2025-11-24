@@ -6,6 +6,8 @@
  * @param {Object} secondPoint
  * @returns {number}
  */
-module.exports.getDistance = function getDistance(firstPoint, secondPoint) {
-  throw new Error('Not implemented'); // remove me and write a solution
-};
+module.exports.getDistance =
+ function diffElems(arr) {
+  // Используем Set, чтобы автоматически убрать дубликаты
+  return new Set(arr).size;
+ }

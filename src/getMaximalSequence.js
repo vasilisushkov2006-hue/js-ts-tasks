@@ -3,6 +3,34 @@
  * @param {Object} arr
  * @returns {Object}
  */
+
 module.exports.getMaximalSequence = function getMaximalSequence(arr) {
-  throw new Error('Not implemented'); // remove me and write a solution
+  if (arr.length === 0) return [];
+
+  let maxSeq = [arr[0]];
+  let currentSeq = [arr[0]];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] === arr[i - 1]) {
+      currentSeq.push(arr[i]);
+    } else {
+      if (currentSeq.length > maxSeq.length) {
+        maxSeq = currentSeq;
+      }
+      currentSeq = [arr[i]];
+    }
+  }
+
+  // Проверяем последнюю последовательность
+  if (currentSeq.length > maxSeq.length) {
+    maxSeq = currentSeq;
+  }
+
+  return maxSeq;
 };
+
+console.log(module.exports.getMaximalSequence([2, 1, 1, 2, 3, 3, 2, 2, 2, 1])); // → [2, 2, 2]
+
+console.log(module.exports.getMaximalSequence([2, 1, 1, 2, 3, 3, 2, 2, 2, 1, 3, 3, 3, 3]));// → [3, 3, 3, 3]
+
+console.log(module.exports.getMaximalSequence([-1, 1, -1, 1, 1, -1, -1, -1, 1])); // [-1, -1, -1]
