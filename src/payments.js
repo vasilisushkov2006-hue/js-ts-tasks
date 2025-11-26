@@ -22,6 +22,16 @@
  * @param {{ sumAllObjectProperties: function() }} TestUtils
  * @returns {function}
  */
-module.exports.payments = function payments(TestUtils) {
-  throw new Error('Not implemented'); // remove this line and create your solution
+module.exports.payments =
+function payments(incomeObj, expenseObj) {
+  // сумма всех доходов
+  const incomeSum = Object.values(incomeObj)
+    .reduce((sum, value) => sum + value, 0);
+
+  // сумма всех расходов
+  const expenseSum = Object.values(expenseObj)
+    .reduce((sum, value) => sum + value, 0);
+
+  // итог: доходы - расходы
+  return incomeSum - expenseSum;
 };

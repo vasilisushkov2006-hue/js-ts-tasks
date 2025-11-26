@@ -8,6 +8,8 @@
  * @param {{ sortComparator: function() }} TestUtils
  * @returns {function}
  */
-module.exports.sort = function sort(TestUtils) {
-  throw new Error('Not implemented'); // remove this line and create your solution
-};
+module.exports.sort =
+ function sort(TestUtils) {
+  // Просто разворачиваем массив аргументов в обратном порядке
+  return TestUtils.reverse();
+}
