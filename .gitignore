@@ -13,9 +13,9 @@ dist-ssr
 *.local
 
 coverage
-
+junit.xml
 .cert
-
+junit.xml
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
